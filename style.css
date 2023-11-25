@@ -104,9 +104,11 @@ section {
 }
 
 .full-width {
-    width: 100%;
+    width: 100% !important;
 }
-
+.pointer{
+    cursor: pointer;
+}
 
 
 
@@ -131,7 +133,9 @@ section {
     left: 1.25em;
 
 }
-
+.serve-glob__subtext{
+    width: 62%;
+}
 
 
 .serve-glob__subtext>p:first-child {
@@ -189,7 +193,7 @@ section {
     stroke-opacity: 0.8;
 }
 
-.customer-blok__tabs--img::before {
+.customer-blok__tabs:hover .customer-blok__tabs--img::before {
     content: "";
     position: absolute;
     width: 24px;
@@ -293,7 +297,7 @@ section {
 }
 
 .tech-container__list {
-    height: 1200px;
+    height: 1800px;
     overflow-y: auto;
     overflow-x: hidden;
 }
