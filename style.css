@@ -34,8 +34,8 @@ h2::before {
     transform: translateX(-50%);
 }
 
-img {
-    pointer-events: none;
+h4 {
+    margin: 0;
 }
 
 h3 {
@@ -59,6 +59,10 @@ h3::before {
     transform: translateX(-50%);
 }
 
+img {
+    pointer-events: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -75,6 +79,7 @@ section {
     max-width: 1100px;
     margin: 60px auto;
 }
+
 
 .flex {
     display: flex;
@@ -97,7 +102,8 @@ section {
 .margin-bot-60 {
     margin-bottom: 60px;
 }
-.full-width{
+
+.full-width {
     width: 100%;
 }
 
@@ -126,9 +132,7 @@ section {
 
 }
 
-.serve-glob__subtext {
-    width: 64%;
-}
+
 
 .serve-glob__subtext>p:first-child {
     margin-bottom: 10px;
@@ -283,24 +287,56 @@ section {
     text-align: start;
 }
 
-.tech .serve-glob__subtext {
-    
-}   
-.tech-container__product{
-    
+.tech-container {
+    align-items: start;
+    gap: 20px;
 }
-.tech-container__list{
-    height: 800px;
+
+.tech-container__list {
+    height: 1200px;
     overflow-y: auto;
     overflow-x: hidden;
 }
-.tech-container--item{
-    flex-direction: column;
+.tech-container__list::-webkit-scrollbar{
+    width: 0px; /* ширина для вертикального скролла */
    
 }
-.tech-container--sub{
-    padding: 30px 40px;
+.tech-container--item:not(:last-child){
+    margin-bottom: 50px;
 }
+
+.tech-container--item {
+    flex-direction: column;
+
+}
+
+.tech-container--sub {
+    padding: 30px 40px;
+    box-shadow: 2px 3px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.tech-container--sub h4{
+    font-size: 28px;
+    font-weight: 700;
+    color: #194F94;
+    line-height: 140%;
+}
+.tech-container--sub a{
+    color: #fff;
+    padding: 12px 32px;
+    background: var(--gp-com-secondary-bright-orange, #FF5E00);
+}
+.tech-container--sub p{
+    margin-bottom: 45px;
+}
+.tech-container__product {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 4px;
+    background: var(--gradients-second-light, linear-gradient(84deg, #004CA6 0.99%, #0C95CF 100%));
+    padding: 15px 20px;
+}
+
 footer {
     padding: 80px 0;
     background-image: url('img/Frame 134570.png');
